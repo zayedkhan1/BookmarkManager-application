@@ -1,12 +1,30 @@
-# React + Vite
+Live website Link: https://managebookmak.netlify.app/login
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Working Flow (User Journey)
+🧑 First Visit
+User lands on /login
 
-Currently, two official plugins are available:
+Enters a username
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+App creates a new localStorage key for that user
 
-## Expanding the ESLint configuration
+Redirects to /home
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔐 After Login
+App loads bookmarks from localStorage using key bookmarks_{username}
+
+UI shows bookmarks with filtering, editing, deleting features
+
+Tags are dynamically generated
+
+🌓 Theme Toggle
+User toggles dark/light mode
+
+Class dark is added or removed from <html>
+
+Mode is saved in localStorage
+
+🔚 Logout
+Clears auth_user
+
+Redirects back to /login

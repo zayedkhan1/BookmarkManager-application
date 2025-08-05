@@ -126,7 +126,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg text-gray-100">Phone</h3>
-                    <p className="text-gray-400">+1 (555) 123-4567</p>
+                    <p className="text-gray-400">+880-159-521</p>
                     <p className="text-gray-400">Mon-Fri, 9am-5pm PST</p>
                   </div>
                 </div>
@@ -137,8 +137,8 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg text-gray-100">Headquarters</h3>
-                    <p className="text-gray-400">123 Bookmark Street</p>
-                    <p className="text-gray-400">San Francisco, CA 94107</p>
+                    <p className="text-gray-400">123 School Street</p>
+                    <p className="text-gray-400">Kanchan Bazar</p>
                   </div>
                 </div>
               </div>

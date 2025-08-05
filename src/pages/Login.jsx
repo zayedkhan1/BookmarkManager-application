@@ -1,45 +1,4 @@
-// import { useState } from 'react';
-// import { useNavigate } from 'react-router-dom';
 
-// function Login({ onLogin }) {
-//   const [username, setUsername] = useState('');
-//   const navigate = useNavigate();
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     if (username.trim()) {
-//       onLogin(username.trim());
-//       navigate('/');
-//     }
-//   };
-
-//   return (
-//     <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-100 to-blue-200 px-4">
-//       <form
-//         onSubmit={handleSubmit}
-//         className="bg-white p-8 rounded-xl shadow-xl w-full max-w-md dark:bg-gray-800"
-//       >
-//         <h2 className="text-3xl font-bold mb-6 text-center text-blue-600 dark:text-white">Login</h2>
-//         <input
-//           type="text"
-//           placeholder="Enter username"
-//           value={username}
-//           onChange={(e) => setUsername(e.target.value)}
-//           className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-//           required
-//         />
-//         <button
-//           type="submit"
-//           className="mt-4 w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600"
-//         >
-//           Login
-//         </button>
-//       </form>
-//     </div>
-//   );
-// }
-
-// export default Login;
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FiExternalLink } from 'react-icons/fi';
@@ -60,25 +19,11 @@ function HomePage({ onLogin }) {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-gray-100">
-      {/* Navigation */}
-      {/* <nav className="px-6 py-4 flex justify-between items-center">
-        <div className="flex items-center">
-          <FaBookmark className="text-indigo-400 text-2xl mr-2" />
-          <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-500">
-            Bookmark<span className="font-light">Manager</span>
-          </span>
-        </div>
-        <button 
-          onClick={() => setShowLogin(true)}
-          className="bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-medium py-2 px-6 rounded-lg transition-all duration-300"
-        >
-          Sign In
-        </button>
-      </nav> */}
+    
 
       {/* Hero Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 text-center">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto p-10 ">
           <h1 className="text-5xl font-extrabold mb-6">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-500">
               Organize. Access. Share.

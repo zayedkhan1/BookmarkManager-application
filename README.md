@@ -1,4 +1,4 @@
-Live website Link:  https://managebookmak.netlify.app/login
+Live website Link:  https://smartbookmarks.netlify.app/login
 
 # Working Flow (User Journey)
 🧑 First Visit

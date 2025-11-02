@@ -17,12 +17,7 @@ UI shows bookmarks with filtering, editing, deleting features
 
 Tags are dynamically generated
 
-🌓 Theme Toggle
-User toggles dark/light mode
 
-Class dark is added or removed from <html>
-
-Mode is saved in localStorage
 
 🔚 Logout
 Clears auth_user
